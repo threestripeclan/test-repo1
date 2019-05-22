@@ -1,3 +1,12 @@
 language: generic
 script:
- - bash test.sh
+  - bash test.sh
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: QMR43gFcCsE95Rw1NDEpUnbJ1aHuztVbFH4q/I00g0TOGs6n72KUzC/PrHtwpAz1TBiMqR7/74sA3BdfTPa1bLrmexOdMkWCFA1cUyT0cWDPbdIqOZtlJf8yBPGds/hiw4MFCoj1lreTnKYBzmK6wqqtBeICkxlpi16qtzpypzFDspJWSh7+VTRdM9WpiMYsku9s6sR5zypNEYY8aNU7eAtzwc7sIfWBLbWlK3JRMOXFdzzL4Iqga7ov5poQzTAv9YZWlFfr0KMjCTVFcAf3Up8mfmSLzi0xHENtha28EvrhMlImU+QO8wFeu9ga7462uhG5yl3rTdhWKLWZbgvuKXFSA1MK6UqRA3KIEU9uRaN0uKFcmP+Yt1kCu4TaQ2dC4Yyn3LM9y0Gp0VfHsu+WXW+hA8CEarwsyEIO6QLV85bDwy5bUI6HuyqX1cBo0epOi8nswi9SfkkN+qcf8sVUQ//Pos5kcfbgJN346FmSD9ualsZmC35wPItyTRP9uYkSph0fQYam2HWG2GoS3t4mcfno3zWvmRbgbysEnjyOh3abw3m1E1WfEHSS6NDEK/YKd9/+4flEziY38rYmi3iHJTA1OKC11IJFAPEr7EwtAKXHVDpLJs5+il/QLEk2MsFrUrqyxfKuzaNlgjpbd/FKfKBteqaqBWLfblu+v7DT9KU=
+  file: hello.sh
+  on:
+    repo: threestripeclan/test-repo1
+    tags: true
