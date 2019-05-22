@@ -12,6 +12,7 @@ The following two are self explanatory
 
 - README file
 - LICENSE file
+- Travis file
 
 ## thanks
 We'd like to thank ~~everyone~~ :
